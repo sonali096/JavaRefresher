@@ -3,20 +3,39 @@ import java.lang.*;
 public class ForLoop {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-
-        int n = scn.nextInt();
-        int cnt = 0;
-        for (int i = 1; i <= n; i++){
-            if (n%i==0){
-                cnt = cnt + 1;
-            }
-        }
-        if (cnt > 2){
-            System.out.println("Not Prime");
-        }else{
-            System.out.println("Prime");
-        }
         
+        // Solve questions with T testcases
+		/*
+		Question - You're given T testcases. In each testcase,
+		you'll get an integer as input. For each testcase, 
+		print its last digit.
+		*/
+        int t = scn.nextInt();
+        for (int cnt = 1; cnt <= t; cnt++){
+            int n = scn.nextInt();
+            System.out.println(n%10);
+        }
+
+        /*Given an integer, print if it prime or not */
+        // int n = scn.nextInt();
+        // int fac = 0;
+        // for (int i = 1; i <= n; i++){
+        //     if (n%i==0){
+        //         fac = fac + 1;
+        //     }
+        //     if (fac > 2){
+        //         break;
+        //     }
+        // }
+        // if (fac == 2){
+        //     System.out.println("Prime");
+        // }else{
+        //     System.out.println("Not Prime");
+        // }
+        /*
+         n = 4  n%i  i <= n  fac > 2 i ++
+                 
+         */
 
         /*Factors of n */
         // int n = scn.nextInt();
