@@ -49,7 +49,68 @@ Output 2:
 
 
 Example Explanation
- Print the pattern as described. */
+ Print the pattern as described. 
+ import java.util.*;
+
+class Main {
+	
+	public static void main(String args[]) {
+			
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		
+		// // Pattern 1
+		// for(int st=1;st<=n;st++) {
+		// 	System.out.print("*");
+		// }
+		
+		// // Pattern 2
+		// for(int row=1;row<=n;row++) {
+		// 	for(int col=1;col<=n;col++) {
+		// 		System.out.print("*");
+		// 	}
+		// 	System.out.println();
+		// }	
+		
+		// // Pattern 3
+		// for(int row=1;row<=n;row++) {
+		// 	for(int col=1;col<=m;col++) {
+		// 		System.out.print("*");
+		// 	}
+		// 	System.out.println();
+		// }	
+		
+		// // Pattern 4
+		// for(int row=1;row<=n;row++) {
+		// 	for(int col=1;col<=row;col++) {
+		// 		System.out.print("*");
+		// 	}
+		// 	System.out.println();
+		// }
+		
+		// // Pattern 5
+		// for(int row=1;row<=n;row++) {
+		// 	for(int col=1;col<=n+1-row;col++) {
+		// 		System.out.print("*");
+		// 	}
+		// 	System.out.println();
+		// }
+		
+		// Pattern 6
+		// for(int row=1;row<=n;row++) {
+		// 	for(int col=1;col<=row;col++) {
+		// 		if(col%2==1) {
+		// 			System.out.print("*");
+		// 		} else {
+		// 			System.out.print(col);
+		// 		}
+				
+		// 	}
+		// 	System.out.println();
+		// }
+			
+	}
+}*/
 
 import java.lang.*;
 import java.util.*;
