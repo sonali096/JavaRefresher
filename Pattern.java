@@ -41,14 +41,63 @@ public class Pattern {
         //     }
         //     System.out.println("");
         // }
+        // int n = scn.nextInt();
+        // for (int row = 1; row <= n; row++){
+        //     for (int col = 1; col <= row; col++){
+        //         if (col % 2 == 0){
+        //             System.out.print(col);
+        //         }else{
+        //             System.out.print("*");
+        //         }
+        //     }
+        //     System.out.println("");
+        // }
         int n = scn.nextInt();
+        // for (int row = 1; row <= n; row++){
+        //     System.out.print("*");
+        //     for (int sp = 1; sp <= n-2; sp++){
+        //         System.out.print("  ");
+        //     }
+        //     System.out.print("*");
+        //     System.out.println();
+        // }
+        // for (int row = 1; row <= n; row++){
+        //     System.out.print("*");
+        //     for (int sp = 1; sp <= n-row; sp++){
+        //         System.out.print("  ");
+        //     }
+        //     System.out.print("*");
+        //     System.out.println();
+        // }
+        // for (int row = 1; row <= n; row++){
+        //     for (int sp = 1; sp <= n-row; sp++){
+        //         System.out.print("  ");
+        //     }
+        //     for (int st = 1; st <= row; st++){
+        //         System.out.print("*");
+        //     }
+        //     System.out.println("");
+
+        // }
+        // for (int row = 1; row <= n; row++){
+        //     for (int st1 = 1; st1 <= n+1-row; st1++){
+        //         System.out.print("*");
+        //     }
+        //     for (int sp = 1; sp < (2 * row) - 1; sp++){
+        //         System.out.print(" ");
+        //     }
+        //     for (int st2 = 1; st2 <= n+1-row; st2++){
+        //         System.out.print("*");
+        //     }
+        //     System.out.println("");
+
+        // }
         for (int row = 1; row <= n; row++){
-            for (int col = 1; col <= row; col++){
-                if (col % 2 == 0){
-                    System.out.print(col);
-                }else{
-                    System.out.print("*");
-                }
+            for(int sp1 = 0; sp1 <= row-1; sp1++){
+                System.out.print(" ");
+            }
+            for (int st = 1; st <= (2*n)+1-(2*row);st++){
+                System.out.print("*");
             }
             System.out.println("");
         }
