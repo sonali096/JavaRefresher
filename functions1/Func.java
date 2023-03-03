@@ -23,12 +23,23 @@ public class Func {
 		int sum1 = a + b;
 		return sum1;
 	}
+	public static double area(double b, double w){
+		double a = b * w;
+		return a;
+	}
+
+	public static double vol(int h, int r){
+		double pie=3.14285714286;  
+		double vol = (Math.PI * r * r)* (h / 3);
+		return vol;
+	}
 
     public static void main(String[] args) {
         
 		Scanner scn = new Scanner(System.in);
 		
-		int m = scn.nextInt();
+		int h = scn.nextInt();
+		int r = scn.nextInt();
 		// int ans1 = countDigits(m);
 		// System.out.println("# of digits in " + m + " is " + ans1);
 		
@@ -39,7 +50,8 @@ public class Func {
 		// int s = sum(ans1, ans2);
 		// System.out.print("Sum is :" + s);
 
-		System.out.print(evenodd(m));
+		//System.out.print(evenodd(m));
+		System.out.print(vol(h,r));
 
     }
 }
