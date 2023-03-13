@@ -48,6 +48,7 @@ public class Marks {
         return false;	
 	}
     public static void main(String args[]){
+
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt(); //length
         int arr[] = new int[n]; 
@@ -55,6 +56,15 @@ public class Marks {
             arr[i] = scn.nextInt();
         }
         // System.out.print(freq(arr));
+        int len = arr.length;
+        int ans[] = new int[len];
+        for (int i = 0; i < len;i++){
+            if((arr[i] % 5 == 0) && (arr[i] % 7 == 0)){
+                ans[i] = arr[i];
+           }
+           System.out.println(ans[i]);
+        }
+
         
         System.out.println(freq(arr));
         //System.out.print(kExists(arr, 4));
