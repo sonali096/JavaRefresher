@@ -5,15 +5,32 @@ public class WhileLoop {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in); 
         /* intput - 6531 output - 1356 */
-
-        int n = scn.nextInt();
-        int rev = 0;
-        while (n >= 0){
-            int d = n % 10;
-            n = n / 10;
-            rev = rev * 10 + d;
+        
+        int n = 100;
+        // int ans = 0;
+        // for(int i = 0; i < n;i++){
+        //     for(int j = i-1; j <= 0; j++){
+        //         ans = ans + i + j;
+        //     }
+        // }
+        // System.out.println(ans);
+        while(n>0){
+            n++;
+            n = n-2;
+            System.out.println(n);
         }
-        System.out.print(rev);
+        
+    
+
+        // int n = scn.nextInt();
+        // int rev = 0;
+        // while (n >= 0){
+        //     int d = n % 10;
+        //     n = n / 10;
+        //     rev = rev * 10 + d;
+        // }
+        // System.out.print(rev);
+        
 
         // [ Pre / Post ] [ increment / decrement ]
 		// int cnt = 2;
